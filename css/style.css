@@ -36,3 +36,49 @@ li {
 #tnb li:hover {
     color: #000;
 }
+
+#tnb-bottom {
+    display: flex;
+    max-width: 900px;
+    margin: 0 auto;
+    justify-content: center; 
+    height: 60px;
+    align-items: center;
+}
+#tnb-bottom > li:nth-child(2n) {
+    margin: 0 50px 0 50px;
+}
+#tnb-bottom > li {
+    font-weight: 700;
+    font-size: 1rem;
+}
+#tnb-bottom li:hover {
+    color: #d60c00;
+}
+.main-banner {
+    max-width: 900px;
+    margin : 0 auto;
+}
+.menu {
+    background: #d60c00;
+    margin: -3px 0;
+}
+.menu-img {
+    display: flex;
+    justify-content: center;
+}
+.main-bottom {
+    max-width: 900px;
+    margin: 0 auto;
+}
+.main-bottom > h2 {
+    text-align: center;
+    padding: 40px 0;
+    font-size: 22px;
+    color: #d60c00;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.bottom-img:nth-child(2) {
+    margin: 
+}
