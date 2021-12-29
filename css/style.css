@@ -87,6 +87,7 @@ li {
 }
 .bottom-img {
     text-align: center;
+    margin-bottom: 80px;
 }
 .bottom-img img {
     box-sizing: border-box;
@@ -98,11 +99,34 @@ li {
     margin: 0 50px 0 50px;
 }
 
-/*============= footer style ==============*/
+/*============= aside style ==============*/
 
-/* .footer-menu {
-    background: gold;
+.aside-menu {
+    background: #f1f1f1;
     display: flex;
     justify-content: center;
-    border-top: 1px solid black;
-} */
+    border-top: 1px solid #191919;
+}
+.aside-menu li {
+    padding: 20px 0;
+    font-size: 14px;
+    color: #d60c00;
+}
+
+.aside-menu li:nth-child(2) {
+    margin: 0 50px 0 50px;
+}
+
+/*============= footer style ==============*/
+
+#footer {
+    text-align: center;
+}
+.footer-logo {
+    margin: 30px 0;
+}
+p {
+    font-size: 12px;
+    color: #999999;
+    font-weight: 700;
+}
