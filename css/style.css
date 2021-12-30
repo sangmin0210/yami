@@ -37,7 +37,7 @@ li {
     color: #000;
 }
 
-#tnb-bottom {
+#gnb {
     display: flex;
     max-width: 900px;
     margin: 0 auto;
@@ -45,17 +45,41 @@ li {
     height: 60px;
     align-items: center;
 }
-#tnb-bottom > li:nth-child(2n) {
+#gnb > li:nth-child(2n) {
     margin: 0 50px 0 50px;
 }
-#tnb-bottom > li {
+#gnb > li {
     font-weight: 700;
     font-size: 1rem;
 }
-#tnb-bottom li:hover {
-    color: #d60c00;
+#gnb li:hover {
+    color: white;
 }
-
+#gnb > li {
+    position: relative;
+    text-align: center;
+}
+#gnb > li > a {
+    display: inline-block;
+    padding: 20px 15px;
+}
+#gnb > li:hover .lnb {
+    display: block;
+}
+.lnb li {
+    padding: 15px 0;
+    text-align: center;
+}
+.lnb {
+    position: absolute;
+    background: #d60c00;
+    color: white;
+    width: 100%;
+    display: none;
+}
+.lnb > li:hover {
+    background: #800600;
+}
 /*============= main banner style ==============*/
 
 .main-banner {
@@ -99,6 +123,37 @@ li {
     margin: 0 50px 0 50px;
 }
 
+/*---------- about intro style -------------*/
+
+
+#slogan {
+    border-bottom: 1px solid #dbdbdb;
+}
+
+#slogan .text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background: url(https://cdn.pixabay.com/photo/2021/10/30/12/50/woman-6754248_960_720.jpg) no-repeat center / cover ;/* 반복안함, 가로-세로 중앙배치 / 사진은 알아서 늘려서*/
+}
+.text p {
+    text-shadow: 1px 1px 10px #000;
+    color: white;
+    font-size: 18px;
+}
+.breadcrumb {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 15px 0;
+    text-align: right;
+    color: #888;
+    font-size: 0.875em;
+}
+.breadcrumb a:hover {
+    color: #d60c00;
+}
+
 /*============= aside style ==============*/
 
 .aside-menu {
@@ -130,3 +185,4 @@ p {
     color: #999999;
     font-weight: 700;
 }
+
