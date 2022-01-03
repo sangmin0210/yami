@@ -1,6 +1,7 @@
 body {
     font-family: 'Lato', 'Noto Sans KR', sans-serif;
     font-size: 16px;
+    height: 1700px;
 }
 a, a:link {
     text-decoration: none;
@@ -125,6 +126,11 @@ li {
 
 /*---------- about intro style -------------*/
 
+#main {
+    width: 900px;
+    margin: 0 auto;
+}
+
 
 #slogan {
     border-bottom: 1px solid #dbdbdb;
@@ -153,6 +159,209 @@ li {
 .breadcrumb a:hover {
     color: #d60c00;
 }
+
+.operation {
+    text-align: center;
+    padding: 30px 0;
+}
+
+.operation h3 {
+    background: #FFBEBE;
+    width: 130px;
+    height: 40px;
+    margin: 0 auto;
+    line-height: 40px;
+    border-radius: 50%;
+    font-size: 17px;
+}
+.operation h4 {
+    padding: 20px 0;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+
+
+/* mind style */
+#mind {
+    display: flex;
+}
+.mind-cols {
+    float: left;
+    width: 418px;
+    height: 218px;
+    
+}
+.mind-col1 {
+    display: table;
+    float: right;
+    background: #ff2525;
+    width: 200px;
+    height: 218px;
+    text-align: center;
+}
+
+.col1-p {
+    display: table-cell;
+    width: inherit;
+    height: inherit;
+    vertical-align: middle;
+}
+.col1-p > p {
+    color: white;
+    margin: 10px 0;
+    line-height: 17px;
+}
+.col1-p > p:nth-child(1) {
+    font-size: 1rem;
+}
+
+.col1-p > hr {
+    width: 150px;
+}
+
+.mind-col2 {
+    display: table;
+    float: right;
+    background: #4b4b4b;
+    width: 200px;
+    height: 218px;
+    text-align: center;
+}
+
+.col2-p {
+    display: table-cell;
+    width: inherit;
+    height: inherit;
+    vertical-align: middle;
+}
+.col2-p > p {
+    color: white;
+    margin: 10px 0;
+    line-height: 17px;
+}
+.col2-p > p:nth-child(1) {
+    font-size: 1rem;
+}
+
+.col2-p > hr {
+    width: 150px;
+}
+/* mind style end */
+
+
+
+
+/* history style */
+
+.history {
+    padding: 40px 0;
+    height: 400px;
+}
+
+.history h3 {
+    background: #FFBEBE;
+    width: 130px;
+    height: 40px;
+    margin: 0 auto;
+    line-height: 40px;
+    border-radius: 50%;
+    font-size: 17px;
+    text-align: center;
+}
+.history-part {
+    padding-top: 30px;
+}
+
+.history-part1 {
+    float: left;
+    width: 450px;
+    line-height: 50px;
+}
+.history-part1 dt {
+    float: left;
+    margin-right: 30px;
+    font-weight: bold;
+}
+.history-part1 dd {
+    font-size: 14px;
+}
+
+.history-part2 {
+    float: right;
+    width: 450px;
+    line-height: 50px;
+}
+
+.history-part2 dt {
+    float: left;
+    margin-right: 30px;
+    font-weight: bold;
+}
+
+.history-part2 dd {
+    font-size: 14px;
+}
+
+/* history style end */
+
+
+
+/* partner style*/
+#partner {
+    padding: 10px 0;
+}
+#partner > h3 {
+    text-align: center;
+    background: #FFBEBE;
+    width: 130px;
+    height: 40px;
+    margin: 0 auto;
+    line-height: 40px;
+    border-radius: 50%;
+    font-size: 17px;
+}
+
+.brand {
+    display: flex;
+    padding: 25px 0;
+
+}
+.brand li {
+    width: 900px;
+    text-align: center;
+}
+
+.brand figure img {
+    width: 180px;
+    height: 150px;
+}
+
+.brand figcaption {
+    margin: 7px 0;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*============= aside style ==============*/
 
