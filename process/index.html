@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,10 +9,14 @@
     <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato&family=Noto+Sans+KR&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/style.css">    
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- // Add the new slick-theme.css if you want the default styling -->
+    <link rel="stylesheet" type="text/css" href="../slick/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="../slick/slick.css" />
 </head>
+
 <body>
     <!-- p.374 HTML5 시맨틱 태그 -->
     <h1 class="blind">스마일푸드 야미</h1>
@@ -42,7 +47,7 @@
                                 <li><a href="../map.html">오시는길</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">생산공정</a></li>
+                        <li><a href="#">프로세스</a></li>
                         <li><a href="../product">제품소개</a></li>
                         <li><a href="#">고객센터</a>
                             <ul class="lnb">
@@ -69,7 +74,51 @@
         <article>
             <h3>생산공정</h3>
             <div class="article-wrap">
-            </div>    
+                <div class="steps">
+                    <div>
+                        <div class="step">
+                            <p class="title">step1</p>
+                            <p class="desc">원료 입고</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="step">
+                            <p class="title">step2</p>
+                            <p class="desc">입고 검사</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="step">
+                            <p class="title">step3</p>
+                            <p class="desc">원료 보관</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="step">
+                            <p class="title">step4</p>
+                            <p class="desc">원료 전처리 공정</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="step">
+                            <p class="title">step5</p>
+                            <p class="desc">만두소(속) 제조</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="step">
+                            <p class="title">step6</p>
+                            <p class="desc">멸균 및 포장</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="step">
+                            <p class="title">step7</p>
+                            <p class="desc">출하</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </article>
     </section>
     <aside>
@@ -88,10 +137,24 @@
             </a>
         </div>
         <address>
-            <p>회사명 : 스마일푸드 야미  사업자등록번호 : 광주-서구-제28호</p>
+            <p>회사명 : 스마일푸드 야미 사업자등록번호 : 광주-서구-제28호</p>
             <p>주소 : 광주광역시 서구 농성로 23-5 (농성동 271-4번지) 한울오피스텔 303호</p>
             <p>copyright&copy; 2021. smile food yami. all rights reserved. </p>
         </address>
     </footer>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="../slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.steps').slick({
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 3,// .your-class 부분을 slick slider를 동작시켜!
+                arrows: true
+            });
+        })
+    </script>
 </body>
+
 </html>
