@@ -4,73 +4,94 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>스마일푸트 야미</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>스마일푸드 야미</title>
+    <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Noto+Sans+KR&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato&family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">    
 </head>
 <body>
     <!-- p.374 HTML5 시맨틱 태그 -->
-    <h1 class="blind">스마일푸트 야미</h1>
+    <h1 class="blind">스마일푸드 야미</h1>
     <header>
         <div class="header-top">
             <div class="top-wrap">
                 <div class="logo">
-                    <a href="#"><img src="../images/logo.gif" alt="스마일푸트 야미"></a>
+                    <a href="#"><img src="../images/logo.gif" alt="야미"></a>
                 </div>
-                    <nav class="nav-top">
-                        <div>
-                            <ul id="tnb">
-                                <li><a href="#">로그인</a></li>
-                                <li><a href="#">회원가입</a></li>
-                                <li><a href="#">장바구니</a></li>
-                                <li><a href="#">마이페이지</a></li>
-                            </ul>
-                        </div>
-                    </nav>
-                </div>
+                <nav class="top-nav">
+                    <ul id="tnb">
+                        <li><a href="#">로그인</a></li>
+                        <li><a href="#">회원가입</a></li>
+                        <li><a href="#">장바구니</a></li>
+                        <li><a href="#">마이페이지</a></li>
+                    </ul>
+                </nav>
             </div>
-        <div>
-            <ul id="tnb-bottom">
-                <li><a href="#">야미소개</a></li>
-                <li><a href="#">생산공정</a></li>
-                <li><a href="#">제품소개</a></li>
-                <li><a href="#">고객센터</a></li>
-            </ul>
+        </div>
+        <div class="header-bottom">
+            <div class="bottom-wrap">
+                <nav class="main-nav">
+                    <ul id="gnb">
+                        <li><a href="#">야미소개</a>
+                            <ul class="lnb">
+                                <li><a href="../intro.html">기업소개</a></li>
+                                <li><a href="../business.html">사업안내</a></li>
+                                <li><a href="../map.html">오시는길</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">생산공정</a></li>
+                        <li><a href="../product">제품소개</a></li>
+                        <li><a href="#">고객센터</a>
+                            <ul class="lnb">
+                                <li><a href="#">새소식</a></li>
+                                <li><a href="#">언론보도</a></li>
+                                <li><a href="#">질문답변</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
-    
-    <!--main-->
+    <div id="slogan">
+        <div class="text">
+            <p>스마일푸드 야미는, 식품을 통해 인류의 건강과 행복을 추구합니다.</p>
+        </div>
+        <div class="breadcrumb">
+            <a href="#"><i class="fas fa-home"></i>홈</a> &gt; 야미소개
+        </div>
+    </div>
     <section id="main">
         <h2 class="blind">main section</h2>
         <article>
-            <h3>페이지를 준비중입니다.</h3>
-            <p>페이지를 준비중입니다.</p>
+            <h3>생산공정</h3>
+            <div class="article-wrap">
+            </div>    
         </article>
     </section>
     <aside>
-        <ul class="aside-menu">
-            <li><a href="#">개인정보취급방침</a></li>
-            <li><a href="#">이용약관</a></li>
-            <li><a href="#">고객센터</a></li>
-        </ul>
+        <div class="aside-wrap">
+            <ul>
+                <li><a href="#">개인정보취급방침</a></li>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">고객센터</a></li>
+            </ul>
+        </div>
     </aside>
     <footer>
-        <div id="footer">
-            <div class="footer-logo">
-                <a href="#">
-                    <img src="../images/footer_logo.gif" alt="스마일푸드 야미">
-                </a>
-            </div>
-            <address>
-                <p>회사명 : 스마일푸트 야미 사업자등록번호 : 광주-서구-제28호</p>
-                <p>주소 : 광주광역시 서구 농성로 23-5 (농성동 271-4번지) 한울오피스텔 303호</p>
-                <p>Copyright(c)2021. Smile Food Yami. All Rights Resrved</p>
-            </address>
+        <div class="logo-footer">
+            <a href="#">
+                <img src="../images/footer_logo.gif" alt="야미">
+            </a>
         </div>
+        <address>
+            <p>회사명 : 스마일푸드 야미  사업자등록번호 : 광주-서구-제28호</p>
+            <p>주소 : 광주광역시 서구 농성로 23-5 (농성동 271-4번지) 한울오피스텔 303호</p>
+            <p>copyright&copy; 2021. smile food yami. all rights reserved. </p>
+        </address>
     </footer>
 </body>
 </html>
