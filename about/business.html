@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,11 +8,10 @@
     <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Noto+Sans+KR&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato&family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">    
 </head>
-
 <body>
     <!-- p.374 HTML5 시맨틱 태그 -->
     <h1 class="blind">스마일푸드 야미</h1>
@@ -39,9 +37,9 @@
                     <ul id="gnb">
                         <li><a href="#">야미소개</a>
                             <ul class="lnb">
-                                <li><a href="./intro.html">기업소개</a></li>
-                                <li><a href="./business.html">사업안내</a></li>
-                                <li><a href="./map.html">오시는길</a></li>
+                                <li><a href="../intro.html">기업소개</a></li>
+                                <li><a href="../business.html">사업안내</a></li>
+                                <li><a href="../map.html">오시는길</a></li>
                             </ul>
                         </li>
                         <li><a href="#">생산공정</a></li>
@@ -69,24 +67,25 @@
     <section id="main">
         <h2 class="blind">main section</h2>
         <article>
-            <h3>오시는 길</h3>
+            <h3>사업안내</h3>
             <div class="article-wrap">
-                <div id="tabs">
-                    <div class="tab-btns">
-                        <ul>
-                            <li><a href="#">본사</a></li>
-                            <li><a href="#">공장</a></li>
-                            <li><a href="#">물류창고</a></li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents">
-                        <div id="map" style="height: 400px;">지도입니다</div>
-                        <div class="map-info">
-                            <div class="info-contact">주소 및 연락처 입니다.</div>
-                            <div class="info-traffic">교통수단별 정보입니다.</div>
-                        </div>
-                    </div>
-                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores est laborum hic qui tempora esse! Accusantium corporis voluptate expedita, ipsam voluptates et cum veritatis ut mollitia alias repellendus a hic?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores est laborum hic qui tempora esse! Accusantium corporis voluptate expedita, ipsam voluptates et cum veritatis ut mollitia alias repellendus a hic?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores est laborum hic qui tempora esse! Accusantium corporis voluptate expedita, ipsam voluptates et cum veritatis ut mollitia alias repellendus a hic?</p>
+                <ul class="business">
+                    <li>
+                        <figure>
+                            <img src="../images/part1.png" alt="분야1">
+                            <figcaption>사업분야1</figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="../images/part2.png" alt="분야2">
+                            <figcaption>사업분야2</figcaption>
+                        </figure>
+                    </li>
+                </ul>
             </div>
         </article>
     </section>
@@ -106,26 +105,10 @@
             </a>
         </div>
         <address>
-            <p>회사명 : 스마일푸드 야미 사업자등록번호 : 광주-서구-제28호</p>
+            <p>회사명 : 스마일푸드 야미  사업자등록번호 : 광주-서구-제28호</p>
             <p>주소 : 광주광역시 서구 농성로 23-5 (농성동 271-4번지) 한울오피스텔 303호</p>
             <p>copyright&copy; 2021. smile food yami. all rights reserved. </p>
         </address>
     </footer>
-    <script type="text/javascript"
-        src="//dapi.kakao.com/v2/maps/sdk.js?appkey=529e3f8bbb1c84b5ed602880a29ad618"></script>
-    <script>
-        var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
-        var options = { //지도를 생성할 때 필요한 기본 옵션
-            center: new kakao.maps.LatLng(35.13192642320111, 126.91876969175615), //지도의 중심좌표.
-            level: 3 //지도의 레벨(확대, 축소 정도)
-        };
-
-        var map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴 
-    </script>
-
-    <!--
-    <script src="../script/map.js"></script> 지도 관련 기능을 연결하기
-    -->
 </body>
-
 </html>
