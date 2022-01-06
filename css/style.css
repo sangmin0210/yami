@@ -375,12 +375,6 @@ a, a:link {
     width: 80%;
     height: 60px;
 }
-input[type=submit] { /*속성 선택자 */
-    height: 40px;
-    width: 120px;
-    margin: 0 0 0 100px;
-}
-
 label {
     margin-right: 1rem;
 }
@@ -532,7 +526,7 @@ label {
 /* ================== login2 style ==================== */
 .login-main {
     text-align: center;
-    margin: 50px 0;
+    margin: 100px 0;
     font-size: 2.3rem;
     text-transform: uppercase;
     color:#d60c00;
@@ -544,22 +538,20 @@ label {
     margin: 0 auto;
 }
 
-#login > a {
-    text-align: center;
-    line-height: 40px;
-    letter-spacing: 3px;
-    font-size: 1.1rem;
-}
 
-#login > a > p {
+
+input[type=submit] {
     background: #ff746d;
     border-radius: 15px;
     width: 400px;
     height: 40px;
-    margin: 0 auto;
+    border: 0;
+    margin-left: 50px;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
 }
 
-#login > a > p:hover {
+input[type=submit]:hover {
     background: #ff3b31;
 }
 
@@ -605,7 +597,7 @@ label {
 }
 .id .login-form input{
     width: 300px;
-    margin-left: 5px;
+    margin-left: 10px;
     border:0 solid black;
 }
 
@@ -617,7 +609,7 @@ label {
     display: flex;
     align-items: center;
     font-size: 15px;
-    margin: 15px 0 25px 25px;
+    margin: 15px 0 15px 0;
 }
 
 .logincheak ul li p {
