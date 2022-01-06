@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Lato', 'Noto Sans KR', sans-serif;
     font-size: 16px;
@@ -229,9 +235,163 @@ a, a:link {
     margin: 10px auto 0;
 }
 
-.slick-prev:before, .slick-next:before {
+.custom-prev:before, .custom-next:before {
     color: gray !important;
 }  
+
+
+/*--------------------- slick custom arrows------------------------------*/
+.custom-prev,
+.custom-next
+{
+    font-size: 0;
+    line-height: 0;
+
+    position: absolute;
+    top: 50%;
+
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+
+    cursor: pointer;
+
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+.custom-prev:hover,
+.custom-prev:focus,
+.custom-next:hover,
+.custom-next:focus
+{
+    color: transparent;
+    outline: none;
+    background: transparent;
+}
+.custom-prev:hover:before,
+.custom-prev:focus:before,
+.custom-next:hover:before,
+.custom-next:focus:before
+{
+    opacity: 1;
+}
+.custom-prev.slick-disabled:before,
+.custom-next.slick-disabled:before
+{
+    opacity: .25;
+}
+
+.custom-prev:before,
+.custom-next:before
+{
+    font-family: 'slick';
+    font-size: 20px;
+    line-height: 1;
+
+    opacity: .75;
+    color: white;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.custom-prev
+{
+    left: -25px;
+}
+[dir='rtl'] .custom-prev
+{
+    right: -25px;
+    left: auto;
+}
+.custom-prev:before
+{
+    content: '';
+    display: block;
+    width: 20px;
+    height: 50px;
+    background: url('../images/prevarrow.png') center / cover;
+}
+[dir='rtl'] .custom-prev:before
+{
+    content: url('../images/prevarrow.png');
+}
+
+.custom-next
+{
+    right: -25px;
+}
+[dir='rtl'] .custom-next
+{
+    right: auto;
+    left: -25px;
+}
+.custom-next:before
+{
+    content: '';
+    display: block;
+    width: 20px;
+    height: 50px;
+    background: url('../images/nextarrow.png') center / cover;
+
+}
+[dir='rtl'] .custom-next:before
+{
+    content: url('../images/nextarrow.png');
+}
+
+
+
+
+
+
+/*-------------------------main > login style------------------------*/
+.form-wrap {
+    width: 700px;
+    height: 370px;
+    margin: 0 auto;
+    border: 1px solid #999;
+    padding: 50px;
+}
+.form-wrap ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.form-wrap ul li:nth-child(3) {
+    justify-content: flex-end;
+}
+
+
+#userId, #userPw {
+    width: 80%;
+    height: 60px;
+}
+input[type=submit] { /*속성 선택자 */
+    height: 40px;
+    width: 120px;
+    margin: 0 0 0 100px;
+}
+
+label {
+    margin-right: 1rem;
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -369,28 +529,10 @@ a, a:link {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ================== login style ==================== */
+/* ================== login2 style ==================== */
 .login-main {
     text-align: center;
-    margin: 100px 0;
+    margin: 50px 0;
     font-size: 2.3rem;
     text-transform: uppercase;
     color:#d60c00;
@@ -415,6 +557,10 @@ a, a:link {
     width: 400px;
     height: 40px;
     margin: 0 auto;
+}
+
+#login > a > p:hover {
+    background: #ff3b31;
 }
 
 .log ul {

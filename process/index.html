@@ -24,7 +24,7 @@
         <div class="header-top">
             <div class="top-wrap">
                 <div class="logo">
-                    <a href="#"><img src="../images/logo.gif" alt="야미"></a>
+                    <a href="../index.html"><img src="../images/logo.gif" alt="야미"></a>
                 </div>
                 <nav class="top-nav">
                     <ul id="tnb">
@@ -42,13 +42,13 @@
                     <ul id="gnb">
                         <li><a href="#">야미소개</a>
                             <ul class="lnb">
-                                <li><a href="../intro.html">기업소개</a></li>
-                                <li><a href="../business.html">사업안내</a></li>
-                                <li><a href="../map.html">오시는길</a></li>
+                                <li><a href="../about/intro.html">기업소개</a></li>
+                                <li><a href="../about/business.html">사업안내</a></li>
+                                <li><a href="../about/map.html">오시는길</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">프로세스</a></li>
-                        <li><a href="../product">제품소개</a></li>
+                        <li><a href="index.html">프로세스</a></li>
+                        <li><a href="../product/index.html">제품소개</a></li>
                         <li><a href="#">고객센터</a>
                             <ul class="lnb">
                                 <li><a href="#">새소식</a></li>
@@ -151,7 +151,10 @@
                 infinite: true,
                 slidesToShow: 3,
                 slidesToScroll: 3,// .your-class 부분을 slick slider를 동작시켜!
-                arrows: true
+                arrows: true,
+                centerMode: true,
+                prevArrow:'<button type="button" class="custom-prev">이전</button>',
+                nextArrow:'<button type="button" class="custom-next">다음</button>'
             });
         })
     </script>
