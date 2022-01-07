@@ -540,7 +540,7 @@ label {
 
 
 
-input[type=submit] {
+.submit1 input {
     background: #ff746d;
     border-radius: 15px;
     width: 400px;
@@ -551,7 +551,7 @@ input[type=submit] {
     letter-spacing: 2px;
 }
 
-input[type=submit]:hover {
+.submit1 input:hover {
     background: #ff3b31;
 }
 
